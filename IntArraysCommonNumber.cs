@@ -23,10 +23,7 @@ public class Program
 	
 	public static int CommonNum(List<int[]> arrays)
 	{
-		arrays.Sort((x,y) => x.Length.CompareTo(y.Length));
-		
-		var longest = arrays[0];
-		var hashSetIntersetcResult = new HashSet<int>(longest);
+		var hashSetIntersetcResult = new HashSet<int>(arrays[0]);
 		
 		foreach(var arr in arrays)
 		{
